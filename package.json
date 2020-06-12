@@ -6,7 +6,7 @@
   "scripts": {
     "build:development": "webpack --config ./webpack/profile/development.js",
     "build:production": "webpack --config ./webpack/profile/production.js",
-    "postinstall": "npx browserslist@latest --update-db",
+    "postinstall": "npm update caniuse-lite browserslist",
     "lint": "eslint .",
     "prebuild:development": "rimraf ./dist",
     "prebuild:production": "rimraf ./dist",
